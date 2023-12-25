@@ -6,7 +6,7 @@ function validarCNPJ(CNPJ)
         'dataType':'jsonp',
         'success':function(dado)
         {
-            if(dado.nome == undefined || ){
+            if(dado.nome == undefined){
                 alert(dado.status + " " +dado.message)
             }else{
             document.getElementById('razao-social').value = dado.nome;
